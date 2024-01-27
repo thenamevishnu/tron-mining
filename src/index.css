@@ -1,0 +1,32 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+body{
+    background: #ecf3fb;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: url("./assets/TRX-icon.png"), auto;
+}
+
+.animate-gradient {
+    animation: gradient 5s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
