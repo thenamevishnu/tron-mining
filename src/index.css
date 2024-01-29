@@ -5,28 +5,25 @@
 @import 'tailwindcss/utilities';
 
 body{
-    background: #ecf3fb;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: #222;
+    background-repeat: no-repeat;
+    font-family: Poppins, "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     cursor: url("./assets/TRX-icon.png"), auto;
-}
-
-.animate-gradient {
-    animation: gradient 5s linear infinite;
-}
-
-@keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
 }
 
 ::-webkit-scrollbar{
     display: none;
 }
 
+.bg-animate{
+    animation: bg-animate 10s linear infinite;
+}
+
+@keyframes bg-animate {
+    0%, 100%{
+        background-size: 1%;
+    }
+    50%{
+        background-size: 100%;
+    }
+}
